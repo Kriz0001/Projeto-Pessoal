@@ -1,0 +1,80 @@
+.black-bg {
+    background-color: #000;
+    color: #fff; /* Cor branca para o texto */
+    height: 100vh;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130vh; /* Alteração para 130vh para garantir que ocupe toda a altura da viewport */
+    position: relative;
+}
+
+.slider {
+    width: 90%; /* Ajusta a largura da caixa */
+    max-width: 800px; /* Define uma largura máxima para a caixa */
+    height: 400px; /* Define uma altura fixa para a caixa */
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.slider img {
+    width: auto; /* Define a largura automática para manter a proporção da imagem */
+    height: 100%; /* Define a altura igual à altura da caixa */
+    object-fit: cover; /* Mantém a proporção e corta as partes excedentes da imagem para preencher a caixa */
+}
+
+
+.title, .countdown {
+    margin-top: 15px;
+}
+
+.box-content {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.title {
+    cursor: pointer;
+}
+
+.title:hover,
+.countdown:hover {
+    color: #6a0dad; /* Cor roxa ao passar o mouse */
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 5px;
+}
+
+.right-arrow {
+    right: 5px;
+}
